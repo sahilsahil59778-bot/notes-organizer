@@ -1,0 +1,29 @@
+<button onclick="toggleMode()">🌙</button>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Notes Organizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="nav">
+  📚 Notes Organizer
+</div>
+<div class="container">
+
+  <h3>Add Note</h3>
+  <input type="text" id="subject" placeholder="Subject">
+  <input type="text" id="title" placeholder="Note Title">
+  <input type="file" id="file">
+  <button onclick="addNote()">Add Note</button>
+
+  <input type="text" placeholder="Search..." onkeyup="searchNotes(this.value)">
+
+  <div id="notes"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
